@@ -24,6 +24,9 @@ public final class MainActivityViewModel_HiltModules {
   @Module
   @InstallIn(ViewModelComponent.class)
   public abstract static class BindsModule {
+    private BindsModule() {
+    }
+
     @Binds
     @IntoMap
     @StringKey("com.demo.daggerhiltdemo.viewmodel.MainActivityViewModel")

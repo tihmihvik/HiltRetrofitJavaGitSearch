@@ -2,11 +2,13 @@
 package com.demo.daggerhiltdemo.di;
 
 import com.demo.daggerhiltdemo.network.RetroServiceInterface;
+import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import dagger.internal.Preconditions;
 import javax.inject.Provider;
 import retrofit2.Retrofit;
 
+@DaggerGenerated
 @SuppressWarnings({
     "unchecked",
     "rawtypes"

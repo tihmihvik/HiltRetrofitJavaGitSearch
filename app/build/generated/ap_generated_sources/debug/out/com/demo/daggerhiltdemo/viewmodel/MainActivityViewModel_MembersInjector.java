@@ -3,9 +3,11 @@ package com.demo.daggerhiltdemo.viewmodel;
 
 import com.demo.daggerhiltdemo.network.RetroServiceInterface;
 import dagger.MembersInjector;
+import dagger.internal.DaggerGenerated;
 import dagger.internal.InjectedFieldSignature;
 import javax.inject.Provider;
 
+@DaggerGenerated
 @SuppressWarnings({
     "unchecked",
     "rawtypes"

@@ -2,9 +2,11 @@
 package com.demo.daggerhiltdemo.viewmodel;
 
 import com.demo.daggerhiltdemo.network.RetroServiceInterface;
+import dagger.internal.DaggerGenerated;
 import dagger.internal.Factory;
 import javax.inject.Provider;
 
+@DaggerGenerated
 @SuppressWarnings({
     "unchecked",
     "rawtypes"

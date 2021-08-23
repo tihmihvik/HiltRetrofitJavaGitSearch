@@ -23,15 +23,15 @@ abstract class Hilt_MainActivity extends AppCompatActivity implements GeneratedC
 
   Hilt_MainActivity() {
     super();
-    init();
+    _initHiltInternal();
   }
 
   Hilt_MainActivity(int contentLayoutId) {
     super(contentLayoutId);
-    init();
+    _initHiltInternal();
   }
 
-  private void init() {
+  private void _initHiltInternal() {
     addOnContextAvailableListener(new OnContextAvailableListener() {
       @Override
       public void onContextAvailable(Context context) {
@@ -70,6 +70,6 @@ abstract class Hilt_MainActivity extends AppCompatActivity implements GeneratedC
 
   @Override
   public ViewModelProvider.Factory getDefaultViewModelProviderFactory() {
-    return DefaultViewModelFactories.getActivityFactory(this);
+    return DefaultViewModelFactories.getActivityFactory(this, super.getDefaultViewModelProviderFactory());
   }
 }

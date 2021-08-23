@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 @InstallIn(SingletonComponent.class)
 public class AppModule {
 
-    String baseURL = "https://api.github.com/search/";//repositories?q=newyork
+    String baseURL = "https://api.github.com/search/";//repositories?q=hilt
 
     @Singleton
     @Provides
