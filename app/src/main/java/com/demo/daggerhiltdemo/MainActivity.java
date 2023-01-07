@@ -1,13 +1,13 @@
 package com.demo.daggerhiltdemo;
 
+import android.os.Bundle;
+import android.widget.Toast;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
-import android.os.Bundle;
-import android.widget.Toast;
 
 import com.demo.daggerhiltdemo.adapter.RecyclerViewAdapter;
 import com.demo.daggerhiltdemo.model.RecyclerData;
@@ -16,7 +16,6 @@ import com.demo.daggerhiltdemo.viewmodel.MainActivityViewModel;
 import java.util.List;
 
 import dagger.hilt.android.AndroidEntryPoint;
-import ru.synergy.hiltretrofitjavagitsearch.R;
 
 @AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
