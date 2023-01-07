@@ -16,6 +16,7 @@ import com.demo.daggerhiltdemo.viewmodel.MainActivityViewModel;
 import java.util.List;
 
 import dagger.hilt.android.AndroidEntryPoint;
+import ru.synergy.hiltretrofitjavagitsearch.R;
 
 @AndroidEntryPoint
 public class MainActivity extends AppCompatActivity {
@@ -47,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
                     recyclerViewAdapter.setListDataItems(recyclerData);
                     recyclerViewAdapter.notifyDataSetChanged();
                 } else {
-                    Toast.makeText(MainActivity.this, "Error in getting data", Toast.LENGTH_SHORT).show();;
+                    Toast.makeText(MainActivity.this, "Error in getting data", Toast.LENGTH_SHORT).show();
                 }
             }
         });
